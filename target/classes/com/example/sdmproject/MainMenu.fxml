@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@Welcome.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdmproject.Controller.MainMenuController">
+<children>
+    <GridPane focusTraversable="false" layoutX="-1.0" layoutY="50.0" prefHeight="449.0" prefWidth="800.0" stylesheets="@Welcome.css">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Button mnemonicParsing="false" onAction="#onOPUSButtonClick" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="OPUS Holder" textAlignment="RIGHT" textFill="#f5f4f4" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                <font>
+                    <Font size="16.0" />
+                </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#onOneWayTicketButtonClick" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="One Way Ticket" textFill="#f5f4f4">
+                <opaqueInsets>
+                    <Insets left="10.0" top="10.0" />
+                </opaqueInsets>
+                <font>
+                    <Font size="16.0" />
+                </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#onWeeklyTicketButtonClick" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Weekly Ticket" textFill="#f5f4f4" GridPane.rowIndex="1">
+                <font>
+                    <Font size="16.0" />
+                </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Button>
+            <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onMonthlyTicketButtonClick" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Monthly Ticket" textFill="#f5f4f4" GridPane.rowIndex="2">
+                <font>
+                    <Font size="16.0" />
+                </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Button>
+        </children>
+    </GridPane>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBackController" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Back" textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+</children>
+</AnchorPane>

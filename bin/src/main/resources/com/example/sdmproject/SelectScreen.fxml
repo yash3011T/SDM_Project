@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdmproject.Controller.SelectScreenController">
+   <stylesheets>
+      <URL value="@Application.css" />
+   </stylesheets>
+   <children>
+      <ComboBox fx:id="selectionList" layoutX="283.0" layoutY="199.0" prefWidth="150.0" promptText="Select Here" styleClass="combo-box-popup"/>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBack" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="717.0" layoutY="439.0" mnemonicParsing="false" onAction="#onClickNext" text="Next">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="287.0" layoutY="154.0" text="Select No. of Tickets">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

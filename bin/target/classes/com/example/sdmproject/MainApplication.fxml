@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="500.0" prefWidth="800.0" styleClass="anchor" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdmproject.Controller.MainApplicationController">
+   <stylesheets>
+      <URL value="@Application.css" />
+   </stylesheets>
+   <children>
+      <Button layoutX="342.0" layoutY="230.0" mnemonicParsing="false" onAction="#onClickBookTicket" prefHeight="40.0" prefWidth="117.0" text="Book Ticket">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ComboBox layoutX="614.0" layoutY="414.0" styleClass="combo-box-popup" prefHeight="40.0" prefWidth="150.0" promptText="Change Language" fx:id="languageList" onAction="#onLanguageChange"/>
+   </children>
+</AnchorPane>

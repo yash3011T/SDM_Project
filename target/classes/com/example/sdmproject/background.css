@@ -1,0 +1,8 @@
+.root{
+-fx-background-image: url('gradient.jpg');
+-fx-background-size:cover;
+}
+.button-style {
+    -fx-border-radius: 5px;
+    -fx-border-color: white;
+}

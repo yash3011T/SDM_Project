@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@Welcome.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdmproject.Controller.OPUSRechargeController">
+   <children>
+      <HBox alignment="CENTER" layoutY="94.0" prefHeight="49.0" prefWidth="800.0">
+         <children>
+            <Label text="Current Balance: " textFill="#f4f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentBalance" text="Label" textFill="#f4f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="CA$" textFill="#f4f5f5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="310.0" layoutY="162.0" prefHeight="25.0" prefWidth="181.0">
+         <children>
+            <Label alignment="CENTER" text="Enter Recharge Amount:" textFill="#f4f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="301.0" layoutY="199.0" prefHeight="41.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="amountTextField" prefHeight="25.0" prefWidth="207.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="357.0" layoutY="268.0" prefHeight="40.0" prefWidth="102.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onClickRechargeController" prefHeight="40.0" prefWidth="131.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Recharge" textFill="#f5f4f4">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Button layoutX="32.0" layoutY="25.0" mnemonicParsing="false" onAction="#onClickBackController" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Back" textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

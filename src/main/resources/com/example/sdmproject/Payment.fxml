@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@Welcome.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdmproject.Controller.PaymentController">
+   <children>
+      <VBox alignment="TOP_CENTER" focusTraversable="false" layoutX="-1.0" prefHeight="500.0" prefWidth="800.0">
+         <children>
+            <HBox prefHeight="145.0" prefWidth="800.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="35.0" textFill="#f4f5f5" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" prefWidth="60.0" text="Back">
+                     <opaqueInsets>
+                        <Insets left="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <Label prefHeight="35.0" prefWidth="146.0" text="Total Amount" textAlignment="CENTER" textFill="#f4f5f5">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="800.0">
+               <children>
+                  <Label fx:id="amount" text="Label" textFill="#f4f5f5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="CA$" textFill="#f4f5f5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets left="10.0" top="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onClickPayWithDebit" prefHeight="47.0" prefWidth="175.0" textFill="#f4f5f5" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Pay with card">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="175.0" textFill="#f4f5f5" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Pay with Cash" onAction="#onClickPayWithDebit">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

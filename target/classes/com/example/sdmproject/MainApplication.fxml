@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" styleClass="anchor" stylesheets="@Welcome.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdmproject.Controller.MainApplicationController">
+   <children>
+      <Button layoutX="14.0" layoutY="369.0" mnemonicParsing="false" onAction="#onClickBookTicket" prefHeight="51.0" prefWidth="195.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Book Ticket" textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="languageList" layoutX="591.0" layoutY="369.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#onLanguageChange" prefHeight="51.0" prefWidth="195.0" promptText="Change Language"  style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2; -fx-prompt-text-fill: white;" styleClass="combo-box-popup">
+
+      </ComboBox>
+      <ImageView fitHeight="119.0" fitWidth="123.0" layoutX="349.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="348.1355895996094" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+         <effect>
+            <Blend mode="DARKEN" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
