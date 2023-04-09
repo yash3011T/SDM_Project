@@ -13,7 +13,7 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <ComboBox fx:id="languageList" layoutX="591.0" layoutY="369.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#onLanguageChange" prefHeight="51.0" prefWidth="195.0" promptText="Change Language" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" styleClass="combo-box-popup" stylesheets="@background.css">
+      <ComboBox fx:id="languageList" layoutX="591.0" layoutY="369.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#onLanguageChange" prefHeight="51.0" prefWidth="195.0" promptText="Change Language" style="-fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 8; -fx-border-width: 2;" styleClass="combo-box-popup" stylesheets="@background.css">
 
       </ComboBox>
       <ImageView fitHeight="119.0" fitWidth="123.0" layoutX="349.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="348.1355895996094" AnchorPane.topAnchor="14.0">

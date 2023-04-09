@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class MainApplicationController {
-    String[] languageListItems = new String[]{"English","French","Chinese","Hindi"};
+    String[] languageListItems = new String[]{"English","French","Italian"};
     public ComboBox<String> languageList ;
 
 
@@ -21,6 +21,7 @@ public class MainApplicationController {
 
     public void initialize(){
         languageList.getItems().setAll(languageListItems);
+        languageList.setValue(languageListItems[0]);
     }
     public void onClickBookTicket(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/Mainmenu.fxml"));

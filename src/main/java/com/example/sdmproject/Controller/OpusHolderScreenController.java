@@ -84,7 +84,7 @@ public class OpusHolderScreenController {
         Scene scene= new Scene(fxmlLoader.load());
 
         Stage stage = MainApplication.getPrimarystage();
-        stage.setTitle("Block My OPUS");
+        stage.setTitle("Main Menu");
         stage.setScene(scene);
         stage.show();
     }

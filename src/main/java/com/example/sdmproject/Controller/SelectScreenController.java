@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 
@@ -33,7 +34,15 @@ public class SelectScreenController {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/Payment.fxml"));
         Scene scene= new Scene(fxmlLoader.load());
         PaymentController paymentController  = fxmlLoader.getController();
-        Double total = Double.parseDouble(selectionList.getValue()) * amount;
+        String selectedValue = selectionList.getValue();
+        if(selectedValue == null){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Warning");
+            alert.setHeaderText("Please select number of ticket.");
+            alert.showAndWait();
+            return;
+        }
+        Double total = Double.parseDouble(selectedValue) * amount;
         paymentController.setAmount(total+"");
         Stage stage = MainApplication.getPrimarystage();
 
