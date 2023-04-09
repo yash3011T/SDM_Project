@@ -10,7 +10,7 @@
       <URL value="@Welcome.css" />
    </stylesheets>
    <children>
-      <ComboBox fx:id="selectionList" layoutX="283.0" layoutY="199.0" prefWidth="150.0" promptText="Select Here" styleClass="combo-box-popup"/>
+      <ComboBox fx:id="selectionList" layoutX="283.0" layoutY="199.0" prefWidth="150.0" promptText="Select Here" styleClass="combo-box-popup"  style="-fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 8; -fx-border-width: 2; -fx-prompt-text-fill: white;"/>
       <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickBack" textFill="#f4f5f5" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Back">
          <font>
             <Font size="16.0" />

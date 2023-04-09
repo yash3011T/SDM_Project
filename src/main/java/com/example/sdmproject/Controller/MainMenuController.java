@@ -1,6 +1,5 @@
 package com.example.sdmproject.Controller;
 
-import com.example.sdmproject.Data;
 import com.example.sdmproject.MainApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -20,25 +19,21 @@ public class MainMenuController {
     }
 
     public void onMonthlyTicketButtonClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/SelectScreen.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/SelectMonthlyTicketType.fxml"));
         Scene scene= new Scene(fxmlLoader.load());
-        SelectScreenController selectScreenController = fxmlLoader.getController();
-        selectScreenController.setAmount(50.0);
         Stage stage = MainApplication.getPrimarystage();
 
-        stage.setTitle("Select Number of Tickets");
+        stage.setTitle("Select Ticket Type");
         stage.setScene(scene);
         stage.show();
     }
 
     public void onWeeklyTicketButtonClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/SelectScreen.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/SelectWeeklyTicketType.fxml"));
         Scene scene= new Scene(fxmlLoader.load());
-        SelectScreenController selectScreenController = fxmlLoader.getController();
-        selectScreenController.setAmount(17.0);
         Stage stage = MainApplication.getPrimarystage();
 
-        stage.setTitle("Select Number of Tickets");
+        stage.setTitle("Select Ticket Type");
         stage.setScene(scene);
         stage.show();
     }
