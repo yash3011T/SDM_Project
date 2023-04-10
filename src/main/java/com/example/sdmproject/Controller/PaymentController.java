@@ -9,9 +9,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextInputDialog;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Optional;
 
 public class PaymentController {
     @FXML
@@ -50,9 +52,10 @@ public class PaymentController {
         alert.setTitle("Processing");
         alert.setHeaderText("Processing payment.");
         alert.showAndWait();
+
         alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Success!");
-        alert.setHeaderText("Please collect your tickets or OPUS card. Have a great day!!");
+        alert.setHeaderText("Payment successful.\nPlease collect your tickets or OPUS card and receipt. Have a great day!!");
         alert.showAndWait();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/MainApplication.fxml"));
         Scene scene= new Scene(fxmlLoader.load());

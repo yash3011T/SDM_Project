@@ -17,12 +17,17 @@ public class MainApplicationController {
     String[] languageListItems = new String[]{"English","Française","Italiana"};
     public ComboBox<String> languageList ;
 
-
-
-
     public void initialize(){
         languageList.getItems().setAll(languageListItems);
         languageList.setValue(languageListItems[0]);
+    }
+    public void onOPUSButtonClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/OpusHolderScreen.fxml"));
+        Scene scene= new Scene(fxmlLoader.load());
+        Stage stage = MainApplication.getPrimarystage();
+        stage.setTitle("OPUS");
+        stage.setScene(scene);
+        stage.show();
     }
     public void onClickBookTicket(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/Mainmenu.fxml"));

@@ -8,12 +8,12 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="800.0" styleClass="anchor" stylesheets="@Welcome.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdmproject.Controller.MainApplicationController">
    <children>
-      <Button layoutX="14.0" layoutY="369.0" mnemonicParsing="false" onAction="#onClickBookTicket" prefHeight="51.0" prefWidth="195.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Book Ticket" textFill="#f5f4f4">
+      <Button layoutX="14.0" layoutY="395.0" mnemonicParsing="false" onAction="#onClickBookTicket" prefHeight="51.0" prefWidth="195.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Book Ticket" textFill="#f5f4f4">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <ComboBox fx:id="languageList" layoutX="591.0" layoutY="369.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#onLanguageChange" prefHeight="51.0" prefWidth="195.0" promptText="Change Language" style="-fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 8; -fx-border-width: 2;" styleClass="combo-box-popup" stylesheets="@background.css">
+      <ComboBox fx:id="languageList" layoutX="591.0" layoutY="400.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#onLanguageChange" prefHeight="51.0" prefWidth="195.0" promptText="Change Language" style="-fx-background-radius: 9; -fx-border-color: black; -fx-border-radius: 8; -fx-border-width: 2;" styleClass="combo-box-popup" stylesheets="@background.css">
 
       </ComboBox>
       <ImageView fitHeight="119.0" fitWidth="123.0" layoutX="349.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="349.0" AnchorPane.rightAnchor="348.1355895996094" AnchorPane.topAnchor="14.0">
@@ -24,10 +24,20 @@
             <Blend mode="DARKEN" />
          </effect>
       </ImageView>
-      <Hyperlink layoutX="335.0" layoutY="440.0" prefHeight="21.0" prefWidth="123.0" text="Terms &amp; Condition" textFill="WHITE" onMouseClicked="#OnTncClicled">
+      <Hyperlink layoutX="335.0" layoutY="440.0" onMouseClicked="#OnTncClicled" prefHeight="21.0" prefWidth="123.0" text="Terms &amp; Condition" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Hyperlink>
+      <Label layoutX="182.0" layoutY="204.0" text="Welcome to iGO Ticket Vending Machine" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="591.0" layoutY="312.0" mnemonicParsing="false" onAction="#onOPUSButtonClick" prefHeight="51.0" prefWidth="195.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="OPUS Holder" textAlignment="RIGHT" textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
