@@ -9,14 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class MainMenuController {
-    public void onOPUSButtonClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/OpusHolderScreen.fxml"));
-        Scene scene= new Scene(fxmlLoader.load());
-        Stage stage = MainApplication.getPrimarystage();
-        stage.setTitle("OPUS");
-        stage.setScene(scene);
-        stage.show();
-    }
+
 
     public void onMonthlyTicketButtonClick(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/SelectMonthlyTicketType.fxml"));

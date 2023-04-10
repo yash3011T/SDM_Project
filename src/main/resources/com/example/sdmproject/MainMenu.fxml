@@ -18,13 +18,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
         <children>
-            <Button mnemonicParsing="false" onAction="#onOPUSButtonClick" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="OPUS Holder" textAlignment="RIGHT" textFill="#f5f4f4" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
-                <font>
-                    <Font size="16.0" />
-                </font>
-               <GridPane.margin>
-                  <Insets right="10.0" />
-               </GridPane.margin></Button>
+
             <Button mnemonicParsing="false" onAction="#onOneWayTicketButtonClick" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="One Way Ticket" textFill="#f5f4f4">
                 <opaqueInsets>
                     <Insets left="10.0" top="10.0" />

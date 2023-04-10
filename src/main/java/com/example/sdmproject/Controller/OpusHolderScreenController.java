@@ -80,7 +80,7 @@ public class OpusHolderScreenController {
     }
 
     public void onClickBackController(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/MainMenu.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/sdmproject/MainApplication.fxml"));
         Scene scene= new Scene(fxmlLoader.load());
 
         Stage stage = MainApplication.getPrimarystage();
