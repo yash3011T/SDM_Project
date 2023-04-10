@@ -19,7 +19,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" onAction="#onClickTripsinZoneA" prefHeight="50.0" prefWidth="357.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Monthly recharge Zone A (Montreal)" textFill="#fffefe">
+            <Button mnemonicParsing="false" onAction="#onClickTripsinZoneA" prefHeight="50.0" prefWidth="357.0" style="-fx-background-color: black; -fx-background-radius: 9; -fx-border-color: white; -fx-border-radius: 8; -fx-border-width: 2;" text="Monthly Recharge Zone A (Montreal)" textFill="#fffefe">
                <font>
                   <Font size="16.0" />
                </font>
